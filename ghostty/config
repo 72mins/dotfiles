@@ -1,0 +1,41 @@
+# Theme
+theme = Dracula+
+
+# Font Config
+font-family = Hack Nerd Font Mono
+font-thicken = true
+font-size = 16
+adjust-cell-height = 15%
+
+# Cursor
+cursor-style = block
+mouse-hide-while-typing = true
+
+# Background
+background-opacity = 0.9
+background-blur-radius = 15
+
+# Window
+window-new-tab-position = end
+quit-after-last-window-closed = true
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+
+# Surface
+confirm-close-surface = false
+
+# Shell
+shell-integration = zsh
+
+# MacOS
+macos-window-shadow = false
+#macos-option-as-alt = true
+#keybind = cmd+right=text:\x05
+#keybind = cmd+left=text:\x01
+#keybind = alt+left=esc:b
+#keybind = alt+right=esc:f
+
+# Misc
+bold-is-bright = true
