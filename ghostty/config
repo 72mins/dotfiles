@@ -4,7 +4,13 @@ theme = Dracula+
 # Font Config
 font-family = Hack Nerd Font Mono
 font-thicken = true
-font-size = 16
+
+# Mac Font Size
+# font-size = 16
+
+# Linux Font Size
+# font-size = 12
+
 adjust-cell-height = 15%
 
 # Cursor
@@ -28,14 +34,12 @@ confirm-close-surface = false
 
 # Shell
 shell-integration = zsh
+bold-is-bright = true
 
 # MacOS
 macos-window-shadow = false
-#macos-option-as-alt = true
-#keybind = cmd+right=text:\x05
-#keybind = cmd+left=text:\x01
-#keybind = alt+left=esc:b
-#keybind = alt+right=esc:f
 
-# Misc
-bold-is-bright = true
+# Linux
+gtk-titlebar = false
+adw-toolbar-style = flat
+gtk-adwaita = false
