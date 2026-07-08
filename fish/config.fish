@@ -39,6 +39,7 @@ alias lg="lazygit"
 abbr -a rpy 'python manage.py runserver'
 abbr -a uvi 'uv run uvicorn app.main:app --reload'
 abbr -a cc 'claude'
+abbr -a check 'make lint && make format && make test'
 alias ll="eza --long --all --group --group-directories-first --icons=auto --header --colour-scale=size --time-style=relative"
 
 # bun
