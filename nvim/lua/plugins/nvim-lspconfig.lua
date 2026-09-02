@@ -69,7 +69,7 @@ return {
                 settings = {
                     python = {
                         analysis = {
-                            typeCheckingMode = 'basic',
+                            typeCheckingMode = 'off',
                         },
                     },
                 },
@@ -84,6 +84,11 @@ return {
                 },
             },
         }
+
+        vim.lsp.config('*', { capabilities = capabilities })
+        for server_name, server in pairs(servers) do
+            vim.lsp.config(server_name, server)
+        end
 
         require('mason').setup()
 
@@ -110,15 +115,7 @@ return {
                 'eslint',
                 'gopls',
             },
-            automatic_installation = true,
             automatic_enable = true,
-            handlers = {
-                function(server_name)
-                    local server = servers[server_name] or {}
-                    server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-                    require('lspconfig')[server_name].setup(server)
-                end,
-            },
         })
     end,
 }
